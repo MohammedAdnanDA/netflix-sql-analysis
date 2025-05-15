@@ -1,8 +1,27 @@
 # 📺 Netflix Data Analysis Project using SQL
 
+![Netflix](https://user-images.githubusercontent.com/122839406/235304300-f65a6b6e-b57e-440f-8c4f-f558c89f5b59.png)
+
 This project involves performing SQL queries on the Netflix dataset to derive insights and explore the content available on the platform. The dataset contains information about movies and TV shows available on Netflix as of 2021.
 
 ## 🧾 Schema
+
+The Netflix table is created with the following schema:
+
+CREATE TABLE netflix (
+    show_id VARCHAR(6),
+    type VARCHAR(10),
+    title VARCHAR(150),
+    director VARCHAR(208),
+    cast VARCHAR(1000),
+    country VARCHAR(150),
+    date_added VARCHAR(50),
+    release_year INT,
+    rating VARCHAR(10),
+    duration VARCHAR(15),
+    listed_in VARCHAR(255),
+    description VARCHAR(250)
+);
 
 The dataset contains the following fields:
 
@@ -25,9 +44,6 @@ The dataset contains the following fields:
 
 > 🔽 Below are the queries executed on the dataset to derive different insights:
 
----
-
-```sql
 -- 1️⃣ Count the number of Movies vs TV Shows
 SELECT type, COUNT(*) AS count
 FROM netflix
@@ -107,15 +123,15 @@ WHERE director IS NULL OR TRIM(director) = '';
 SELECT COUNT(*) AS total, title
 FROM netflix
 WHERE type = 'Movie'
-  AND casts ILIKE '%Salman Khan%'
+  AND cast ILIKE '%Salman Khan%'
   AND release_year >= EXTRACT(YEAR FROM CURRENT_DATE) - 10
 GROUP BY title;
 
 -- 1️⃣4️⃣ Top 10 actors in Indian movies who have appeared in the highest number of movies
 WITH actor_list AS (
-  SELECT UNNEST(STRING_TO_ARRAY(casts, ', ')) AS actor
+  SELECT UNNEST(STRING_TO_ARRAY(cast, ', ')) AS actor
   FROM netflix
-  WHERE type = 'Movie' AND country LIKE '%India%' AND casts IS NOT NULL
+  WHERE type = 'Movie' AND country LIKE '%India%' AND cast IS NOT NULL
 )
 SELECT actor, COUNT(*) AS movie_count
 FROM actor_list
