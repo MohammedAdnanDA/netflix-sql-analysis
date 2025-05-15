@@ -1,7 +1,5 @@
 # 📺 Netflix Data Analysis Project using SQL
 
-![Netflix](https://user-images.githubusercontent.com/122839406/235304300-f65a6b6e-b57e-440f-8c4f-f558c89f5b59.png)
-
 This project involves performing SQL queries on the Netflix dataset to derive insights and explore the content available on the platform. The dataset contains information about movies and TV shows available on Netflix as of 2021.
 
 ## 🧾 Schema
