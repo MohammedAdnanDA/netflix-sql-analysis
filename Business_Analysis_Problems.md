@@ -1,29 +1,33 @@
-1️⃣ Count the number of Movies vs TV Shows
+# Business Problems for Netflix Data Analysis
 
-2️⃣ Most common rating for Movies and TV Shows
+Below are the key business problems and questions that will be explored using the Netflix dataset:
 
-3️⃣ List all movies released in a specific year (e.g., 2020)
+1. **Count the number of Movies vs TV Shows**
 
-4️⃣ Top 5 countries with the most content on Netflix
+2. **Identify the most common rating for Movies and TV Shows**
 
-5️⃣ Identify the longest movie
+3. **List all movies released in a specific year (e.g., 2020)**
 
-6️⃣ Content added in the last 5 years
+4. **Find the top 5 countries with the most content on Netflix**
 
-7️⃣ All movies/TV shows by director 'Rajiv Chilaka'
+5. **Identify the longest movie available**
 
-8️⃣ TV shows with more than 5 seasons
+6. **List content added in the last 5 years**
 
-9️⃣ Number of content items in each genre
+7. **Retrieve all movies and TV shows by director 'Rajiv Chilaka'**
 
-🔟 Top 5 years with highest average content release in India
+8. **Find TV shows with more than 5 seasons**
 
-1️⃣1️⃣ All movies that are documentaries
+9. **Count the number of content items in each genre**
 
-1️⃣2️⃣ Content without a director
+10. **Determine the top 5 years with the highest average content release in India**
 
-1️⃣3️⃣ Number of movies with 'Salman Khan' in last 10 years
+11. **List all movies that are documentaries**
 
-1️⃣4️⃣ Top 10 actors in Indian movies who have appeared in the highest number of movies
+12. **Find content without a director listed**
 
-1️⃣5️⃣ Categorize content based on presence of 'kill' or 'violence' in description as 'Bad' or 'Good'
+13. **Count the number of movies with 'Salman Khan' in the last 10 years**
+
+14. **Identify the top 10 actors in Indian movies who have appeared in the highest number of movies**
+
+15. **Categorize content based on the presence of 'kill' or 'violence' in the description as 'Bad' or 'Good'**
